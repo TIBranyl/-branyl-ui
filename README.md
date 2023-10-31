@@ -1,0 +1,23 @@
+- [x] Avatar.
+- [x] Button.
+- [x] FormText.
+- [x] Menu.
+- [x] Modal.
+- [x] Table.
+- [x] Text.
+- [x] TextArea.
+- [ ] Badge.
+- [ ] DatePicker.
+- [ ] Nav.
+- [ ] Pagination.
+- [ ] Tabs.
+- [ ] Data.
+- [ ] Checkbox.
+- [ ] FileInput.
+- [ ] Form / Validation.
+- [ ] Select.
+- [ ] Box.
+- [ ] Card.
+- [ ] SideBar.
+- [ ] InfinitScroll.
+- [ ] TableInfinitScroll
