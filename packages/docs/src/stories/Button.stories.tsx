@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button, ButtonProps } from "@branyl-acqualinea/react";
+import { Button, ButtonProps } from "@branyl-ui/react";
 import { ArrowRight, ArrowsClockwise } from "phosphor-react";
 
 export default {

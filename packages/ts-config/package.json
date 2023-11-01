@@ -1,6 +1,6 @@
 {
-  "name": "@branyl-acqualinea/ts-config",
-  "version": "1.0.0",
+  "name": "@branyl-ui/ts-config",
+  "version": "2.0.0",
   "license": "MIT",
   "private": true
 }

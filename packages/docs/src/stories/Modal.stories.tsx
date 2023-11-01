@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Modal, ModalProps } from "@branyl-acqualinea/react";
+import { Modal, ModalProps } from "@branyl-ui/react";
 import { X } from "phosphor-react";
 
 export default {

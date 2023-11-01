@@ -8,3 +8,4 @@ export * from "./components/TextArea";
 export * from "./components/Menu";
 export * from "./components/Table";
 export * from "./components/Modal";
+export * from "./components/Badge";

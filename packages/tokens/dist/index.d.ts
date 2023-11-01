@@ -73,6 +73,7 @@ declare const fonts: {
 };
 
 declare const fontSizes: {
+    xxxs: string;
     xxs: string;
     xs: string;
     sm: string;

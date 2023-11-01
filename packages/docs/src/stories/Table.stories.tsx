@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Table, TableProps } from "@branyl-acqualinea/react";
+import { Table, TableProps } from "@branyl-ui/react";
 
 export default {
   title: "Form/Table",

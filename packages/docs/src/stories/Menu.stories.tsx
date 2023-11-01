@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Menu, MenuInterface } from "@branyl-acqualinea/react";
+import { Menu, MenuInterface } from "@branyl-ui/react";
 import { Copy, Eye, FilePdf, Gear } from "phosphor-react";
 
 export default {

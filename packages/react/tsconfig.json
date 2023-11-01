@@ -1,4 +1,4 @@
 {
-  "extends": "@branyl-acqualinea/ts-config/react.json",
+  "extends": "@branyl-ui/ts-config/react.json",
   "include": ["src"]
 }

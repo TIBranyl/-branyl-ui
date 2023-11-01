@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Text, TextArea, TextAreaProps } from "@branyl-acqualinea/react";
+import { Text, TextArea, TextAreaProps } from "@branyl-ui/react";
 
 export default {
   title: "Form/Text Area",

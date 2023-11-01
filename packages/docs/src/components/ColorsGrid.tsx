@@ -1,5 +1,5 @@
 import { getContrast } from "polished";
-import { colors } from "@branyl-acqualinea/tokens";
+import { colors } from "@branyl-ui/tokens";
 
 export function ColorsGrid() {
   return Object.entries(colors).map(([key, color]) => {

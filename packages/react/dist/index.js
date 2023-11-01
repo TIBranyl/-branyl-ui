@@ -60,6 +60,7 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 var src_exports = {};
 __export(src_exports, {
   Avatar: () => Avatar2,
+  Badge: () => Badge,
   Button: () => Button,
   FormText: () => FormText,
   Menu: () => Menu,
@@ -143,6 +144,7 @@ var fonts = {
   code: "monospace"
 };
 var fontSizes = {
+  xxxs: "0.525rem",
   xxs: "0.625rem",
   xs: "0.75rem",
   sm: "0.875rem",
@@ -931,9 +933,90 @@ var Modal = (0, import_react8.forwardRef)(
   }
 );
 Modal.displayName = "Modal";
+
+// src/components/Badge.tsx
+var Badge = styled("div", {
+  position: "relative",
+  display: "inline-flex",
+  "&::after": {
+    content: "attr(dataBadge)",
+    position: "absolute",
+    right: -10,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: "$full",
+    color: "$white",
+    fontWeight: "$medium"
+  },
+  variants: {
+    variant: {
+      primary: {
+        "&::after": {
+          backgroundColor: "$indigo500"
+        }
+      },
+      secondary: {
+        "&::after": {
+          backgroundColor: "$gray400"
+        }
+      },
+      success: {
+        "&::after": {
+          backgroundColor: "$green500"
+        }
+      },
+      warning: {
+        "&::after": {
+          backgroundColor: "$yellow500"
+        }
+      },
+      danger: {
+        "&::after": {
+          backgroundColor: "$red500"
+        }
+      }
+    },
+    size: {
+      sm: {
+        "&::after": {
+          width: "$2",
+          height: "$2",
+          fontSize: "$xxs",
+          right: -10
+        }
+      },
+      md: {
+        "&::after": {
+          width: "$3",
+          height: "$3",
+          fontSize: "$xxs",
+          padding: "$1",
+          right: -14
+        }
+      },
+      lg: {
+        "&::after": {
+          width: "$3",
+          height: "$3",
+          fontSize: "$xxs",
+          padding: "0.6rem",
+          right: -20,
+          top: -6
+        }
+      }
+    }
+  },
+  defaultVariants: {
+    variant: "primary",
+    size: "sm"
+  }
+});
+Badge.displayName = "Badge";
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
+  Badge,
   Button,
   FormText,
   Menu,

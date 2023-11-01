@@ -1,5 +1,5 @@
 {
-  "name": "docs",
+  "name": "@branyl-ui/docs",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +12,7 @@
     "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
-    "@branyl-acqualinea/tokens": "*",
+    "@branyl-ui/tokens": "*",
     "date-fns": "^2.30.0",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",

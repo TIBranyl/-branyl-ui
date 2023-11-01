@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { FormText, FormTextProps } from "@branyl-acqualinea/react";
+import { FormText, FormTextProps } from "@branyl-ui/react";
 import { MagnifyingGlass } from "phosphor-react";
 
 export default {

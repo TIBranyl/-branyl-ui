@@ -1,6 +1,6 @@
 {
-  "name": "@branyl-acqualinea/tokens",
-  "version": "1.0.0",
+  "name": "@branyl-ui/tokens",
+  "version": "2.0.0",
   "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -11,8 +11,8 @@
     "lint": "eslint src/**/*.ts* --fix"
   },
   "devDependencies": {
-    "@branyl-acqualinea/ts-config": "*",
-    "@branyl-acqualinea/eslint-config": "*",
+    "@branyl-ui/ts-config": "*",
+    "@branyl-ui/eslint-config": "*",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2"
   }
