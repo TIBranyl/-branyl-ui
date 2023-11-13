@@ -118,8 +118,7 @@ var colors = {
   indigo500: "#6366f1",
   indigo700: "#4338ca",
   indigo900: "#1e3a8a",
-  indigo950: "#1e1b4b",
-  test: "#FFF"
+  indigo950: "#1e1b4b"
 };
 var space = {
   1: "0.25rem",
@@ -1289,7 +1288,7 @@ var Navbars = styled("header", {
   alignItems: "center",
   minHeight: "$12",
   width: "100%",
-  padding: "$2",
+  padding: "$4",
   variants: {
     variant: {
       primary: {
@@ -1306,6 +1305,9 @@ var Navbars = styled("header", {
       },
       danger: {
         backgroundColor: "$red200"
+      },
+      info: {
+        backgroundColor: "$blue500"
       }
     },
     allign: {

@@ -25,6 +25,9 @@ export const Navbars = styled("header", {
       danger: {
         backgroundColor: "$red200",
       },
+      info: {
+        backgroundColor: "$blue500",
+      },
     },
     allign: {
       center: {

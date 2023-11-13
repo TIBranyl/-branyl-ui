@@ -39,7 +39,6 @@ declare const colors: {
     indigo700: string;
     indigo900: string;
     indigo950: string;
-    test: string;
 };
 
 declare const space: {

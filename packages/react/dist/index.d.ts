@@ -50,7 +50,6 @@ declare const Button: _stitches_react_types_styled_component.StyledComponent<"bu
         indigo700: string;
         indigo900: string;
         indigo950: string;
-        test: string;
     };
     fontSizes: {
         xxxs: string;
@@ -288,7 +287,6 @@ declare const Text: _stitches_react_types_styled_component.StyledComponent<"span
         indigo700: string;
         indigo900: string;
         indigo950: string;
-        test: string;
     };
     fontSizes: {
         xxxs: string;
@@ -532,7 +530,6 @@ declare const AvatarImage: _stitches_react_types_styled_component.StyledComponen
         indigo700: string;
         indigo900: string;
         indigo950: string;
-        test: string;
     };
     fontSizes: {
         xxxs: string;
@@ -771,7 +768,6 @@ declare const TextArea: _stitches_react_types_styled_component.StyledComponent<"
         indigo700: string;
         indigo900: string;
         indigo950: string;
-        test: string;
     };
     fontSizes: {
         xxxs: string;
@@ -1042,7 +1038,6 @@ declare const Badge: _stitches_react_types_styled_component.StyledComponent<"div
         indigo700: string;
         indigo900: string;
         indigo950: string;
-        test: string;
     };
     fontSizes: {
         xxxs: string;
@@ -1276,7 +1271,6 @@ declare const Box: _stitches_react_types_styled_component.StyledComponent<"div",
         indigo700: string;
         indigo900: string;
         indigo950: string;
-        test: string;
     };
     fontSizes: {
         xxxs: string;
@@ -1511,7 +1505,6 @@ declare const Card: _stitches_react_types_styled_component.StyledComponent<"div"
         indigo700: string;
         indigo900: string;
         indigo950: string;
-        test: string;
     };
     fontSizes: {
         xxxs: string;
@@ -1748,7 +1741,6 @@ declare const Checkbox: _stitches_react_types_styled_component.StyledComponent<"
         indigo700: string;
         indigo900: string;
         indigo950: string;
-        test: string;
     };
     fontSizes: {
         xxxs: string;
@@ -1960,7 +1952,7 @@ interface SelectProps extends Omit<HTMLAttributes<HTMLDivElement>, "onChange"> {
 declare const Select: react.ForwardRefExoticComponent<SelectProps & react.RefAttributes<HTMLTableElement>>;
 
 declare const Navbars: _stitches_react_types_styled_component.StyledComponent<"header", {
-    variant?: "primary" | "secondary" | "warning" | "success" | "danger" | undefined;
+    variant?: "primary" | "secondary" | "warning" | "success" | "danger" | "info" | undefined;
     allign?: "right" | "left" | "center" | "between" | "around" | undefined;
 }, {}, _stitches_react_types_css_util.CSS<{}, {
     colors: {
@@ -2004,7 +1996,6 @@ declare const Navbars: _stitches_react_types_styled_component.StyledComponent<"h
         indigo700: string;
         indigo900: string;
         indigo950: string;
-        test: string;
     };
     fontSizes: {
         xxxs: string;

@@ -9,7 +9,7 @@ export default {
   },
   argTypes: {
     variant: {
-      options: ["primary", "secondary", "success", "warning", "danger"],
+      options: ["primary", "secondary", "success", "warning", "danger", "info"],
       control: { type: "inline-radio" },
     },
     allign: {

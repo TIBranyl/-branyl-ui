@@ -39,8 +39,7 @@ var colors = {
   indigo500: "#6366f1",
   indigo700: "#4338ca",
   indigo900: "#1e3a8a",
-  indigo950: "#1e1b4b",
-  test: "#FFF"
+  indigo950: "#1e1b4b"
 };
 
 // src/space.ts
