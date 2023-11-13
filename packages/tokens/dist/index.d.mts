@@ -30,6 +30,7 @@ declare const colors: {
     gray200: string;
     gray300: string;
     gray400: string;
+    gray500: string;
     indigo50: string;
     indigo100: string;
     indigo200: string;
@@ -38,6 +39,7 @@ declare const colors: {
     indigo700: string;
     indigo900: string;
     indigo950: string;
+    test: string;
 };
 
 declare const space: {
@@ -53,6 +55,7 @@ declare const space: {
     12: string;
     16: string;
     20: string;
+    28: string;
     40: string;
     64: string;
     80: string;

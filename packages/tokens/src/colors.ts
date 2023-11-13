@@ -52,6 +52,4 @@ export const colors = {
   indigo700: "#4338ca",
   indigo900: "#1e3a8a",
   indigo950: "#1e1b4b",
-
-  test: "#FFF"
 }

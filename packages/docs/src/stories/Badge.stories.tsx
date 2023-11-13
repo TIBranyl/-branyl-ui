@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Badge, BadgeProps, Button } from "@branyl-ui/react";
 
 export default {
-  title: "Form/Badge",
+  title: "Data Display/Badge",
   component: Badge,
   args: {
     children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",

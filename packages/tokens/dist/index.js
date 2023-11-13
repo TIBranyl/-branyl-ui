@@ -63,6 +63,7 @@ var colors = {
   gray200: "#e5e7eb",
   gray300: "#d1d5db",
   gray400: "#9ca3af",
+  gray500: "#6b7280",
   indigo50: "#eef2ff",
   indigo100: "#e0e7ff",
   indigo200: "#c7d2fe",
@@ -70,7 +71,8 @@ var colors = {
   indigo500: "#6366f1",
   indigo700: "#4338ca",
   indigo900: "#1e3a8a",
-  indigo950: "#1e1b4b"
+  indigo950: "#1e1b4b",
+  test: "#FFF"
 };
 
 // src/space.ts
@@ -87,6 +89,7 @@ var space = {
   12: "3rem",
   16: "4rem",
   20: "5rem",
+  28: "7rem",
   40: "10rem",
   64: "16rem",
   80: "20rem"

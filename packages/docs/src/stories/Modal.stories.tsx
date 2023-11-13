@@ -3,7 +3,7 @@ import { Modal, ModalProps } from "@branyl-ui/react";
 import { X } from "phosphor-react";
 
 export default {
-  title: "Form/Modal",
+  title: "Feedback/Modal",
   component: Modal,
   args: {
     width: "50%",

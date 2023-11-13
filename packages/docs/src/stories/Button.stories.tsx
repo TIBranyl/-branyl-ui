@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Button, ButtonProps } from "@branyl-ui/react";
-import { ArrowRight, ArrowsClockwise } from "phosphor-react";
+import { ArrowRight } from "phosphor-react";
 
 export default {
   title: "Form/Button",
@@ -12,8 +12,8 @@ export default {
     disabled: false,
   },
   argTypes: {
-    vairant: {
-      option: ["primary", "secondary", "warning", "danger", "success"],
+    variant: {
+      options: ["primary", "secondary", "success", "warning", "danger"],
       control: { type: "inline-radio" },
     },
   },
@@ -21,66 +21,22 @@ export default {
 
 export const Primary: StoryObj<ButtonProps> = {};
 
-export const PrimaryOutline: StoryObj<ButtonProps> = {
+export const Outline: StoryObj<ButtonProps> = {
   args: {
     variant: "primaryOutline",
     children: "Button",
   },
-};
-
-export const Secondary: StoryObj<ButtonProps> = {
-  args: {
-    variant: "secondary",
-    children: "Button",
-  },
-};
-
-export const SecondaryOutline: StoryObj<ButtonProps> = {
-  args: {
-    variant: "secondaryOutline",
-    children: "Button",
-  },
-};
-
-export const Warning: StoryObj<ButtonProps> = {
-  args: {
-    variant: "warning",
-    children: "Button",
-  },
-};
-
-export const WarningOutline: StoryObj<ButtonProps> = {
-  args: {
-    variant: "warningOutline",
-    children: "Button",
-  },
-};
-
-export const Danger: StoryObj<ButtonProps> = {
-  args: {
-    variant: "danger",
-    children: "Button",
-  },
-};
-
-export const DangerOutline: StoryObj<ButtonProps> = {
-  args: {
-    variant: "dangerOutline",
-    children: "Button",
-  },
-};
-
-export const Success: StoryObj<ButtonProps> = {
-  args: {
-    variant: "success",
-    children: "Button",
-  },
-};
-
-export const SuccessOutline: StoryObj<ButtonProps> = {
-  args: {
-    variant: "successOutline",
-    children: "Button",
+  argTypes: {
+    variant: {
+      options: [
+        "primaryOutline",
+        "secondaryOutline",
+        "successOutline",
+        "warningOutline",
+        "dangerOutline",
+      ],
+      control: { type: "inline-radio" },
+    },
   },
 };
 
@@ -95,16 +51,32 @@ export const WithIcon: StoryObj<ButtonProps> = {
   },
 };
 
-export const Disabled: StoryObj<ButtonProps> = {
+export const WithIconOutline: StoryObj<ButtonProps> = {
   args: {
-    disabled: true,
+    children: (
+      <>
+        Next
+        <ArrowRight weight="bold" />
+      </>
+    ),
+    variant: "primaryOutline",
+  },
+  argTypes: {
+    variant: {
+      options: [
+        "primaryOutline",
+        "secondaryOutline",
+        "successOutline",
+        "warningOutline",
+        "dangerOutline",
+      ],
+      control: { type: "inline-radio" },
+    },
   },
 };
 
-export const Clean: StoryObj<ButtonProps> = {
+export const Disabled: StoryObj<ButtonProps> = {
   args: {
-    children: <ArrowsClockwise weight="bold" />,
-    size: "md",
-    variant: "warning",
+    disabled: true,
   },
 };

@@ -3,7 +3,7 @@ import { Menu, MenuInterface } from "@branyl-ui/react";
 import { Copy, Eye, FilePdf, Gear } from "phosphor-react";
 
 export default {
-  title: "Form/Menu",
+  title: "Navigation/Menu",
   component: Menu,
   args: {
     icon: <Gear size={24} />,

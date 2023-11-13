@@ -6,7 +6,7 @@ export const Navbars = styled("header", {
   alignItems: "center",
   minHeight: "$12",
   width: "100%",
-  padding: "$2",
+  padding: "$4",
 
   variants: {
     variant: {

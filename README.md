@@ -1,22 +1,33 @@
 Design System developed for web-applications for Branyl Ind. Têxtil .
 
-- [x] Avatar.
-- [x] Button.
-- [x] FormText.
-- [x] Menu.
-- [x] Modal.
-- [x] Table.
-- [x] Text.
-- [x] TextArea.
-- [x] Badge.
-- [ ] DatePicker.
-- [ ] Nav.
-- [ ] Pagination.
-- [ ] Data.
-- [ ] Checkbox.
-- [ ] FileInput.
-- [ ] Select.
-- [ ] Box.
-- [ ] Card.
-- [ ] SideBar.
-- [ ] InfinitScroll.
+- **Data Display:**
+
+  - [x] Avatar .
+  - [x] Table .
+  - [x] Badge.
+  - [x] Card.
+
+- **Form:**
+
+  - [x] Text.
+  - [x] TextArea.
+  - [x] Checkbox.
+  - [x] Select.
+  - [ ] DatePicker.
+
+- **Navigation:**
+
+  - [x] Menu.
+  - [ ] Nav.
+
+- **Typography:**
+
+  - [x] Text.
+
+- **Feedback**
+
+  - [x] Modal.
+
+- **Surface:**
+
+  - [x] Box.

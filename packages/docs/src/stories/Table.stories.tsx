@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Table, TableProps } from "@branyl-ui/react";
 
 export default {
-  title: "Form/Table",
+  title: "Data Display/Table",
   component: Table,
 } as Meta<TableProps>;
 
