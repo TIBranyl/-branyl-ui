@@ -5,7 +5,7 @@ import {
   InputHTMLAttributes,
 } from "react";
 import { FormTextContainer, Input, Prefix } from "./styles";
-import { Text } from "../Text";
+import { Text } from "../../Text";
 
 interface FormTextInputProps
   extends Omit<InputHTMLAttributes<HTMLInputElement>, "prefix"> {

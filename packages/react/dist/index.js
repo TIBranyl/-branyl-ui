@@ -61,10 +61,15 @@ var src_exports = {};
 __export(src_exports, {
   Avatar: () => Avatar2,
   Badge: () => Badge,
+  Box: () => Box,
   Button: () => Button,
+  Card: () => Card,
+  Checkbox: () => Checkbox,
   FormText: () => FormText,
   Menu: () => Menu,
   Modal: () => Modal,
+  Navbars: () => Navbars,
+  Select: () => Select,
   Table: () => Table,
   Text: () => Text,
   TextArea: () => TextArea
@@ -105,6 +110,7 @@ var colors = {
   gray200: "#e5e7eb",
   gray300: "#d1d5db",
   gray400: "#9ca3af",
+  gray500: "#6b7280",
   indigo50: "#eef2ff",
   indigo100: "#e0e7ff",
   indigo200: "#c7d2fe",
@@ -112,7 +118,8 @@ var colors = {
   indigo500: "#6366f1",
   indigo700: "#4338ca",
   indigo900: "#1e3a8a",
-  indigo950: "#1e1b4b"
+  indigo950: "#1e1b4b",
+  test: "#FFF"
 };
 var space = {
   1: "0.25rem",
@@ -127,6 +134,7 @@ var space = {
   12: "3rem",
   16: "4rem",
   20: "5rem",
+  28: "7rem",
   40: "10rem",
   64: "16rem",
   80: "20rem"
@@ -185,7 +193,13 @@ var {
 } = (0, import_react.createStitches)({
   themeMap: __spreadProps(__spreadValues({}, import_react.defaultThemeMap), {
     height: "space",
-    width: "space"
+    width: "space",
+    border: "colors",
+    minWidth: "space",
+    maxWidth: "space",
+    minHeight: "space",
+    maxHeight: "space",
+    borderColor: "colors"
   }),
   theme: {
     colors,
@@ -397,10 +411,10 @@ var Text = styled("span", {
 });
 Text.displayName = "Card";
 
-// src/components/FormText/index.tsx
+// src/components/Forms/Text/index.tsx
 var import_react2 = require("react");
 
-// src/components/FormText/styles.ts
+// src/components/Forms/Text/styles.ts
 var FormTextContainer = styled("div", {
   display: "flex",
   alignItems: "center",
@@ -449,7 +463,7 @@ var Input = styled("input", {
   padding: "$1"
 });
 
-// src/components/FormText/index.tsx
+// src/components/Forms/Text/index.tsx
 var import_jsx_runtime = require("react/jsx-runtime");
 var FormText = (0, import_react2.forwardRef)(
   (_a, ref) => {
@@ -1013,14 +1027,324 @@ var Badge = styled("div", {
   }
 });
 Badge.displayName = "Badge";
+
+// src/components/Box.tsx
+var Box = styled("div", {
+  padding: "$6",
+  borderRadius: "$md",
+  border: "1px solid $gray300"
+});
+Box.displayName = "Box";
+
+// src/components/Card.tsx
+var Card = styled("div", {
+  borderRadius: "$md",
+  border: "1px solid $indigo100",
+  maxWidth: "$64",
+  minHeight: "$28",
+  padding: "$4",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  gap: "$2"
+});
+Card.displayName = "Card";
+
+// src/components/Forms/Checkbox.tsx
+var Checkbox = styled("input", {
+  variants: {
+    variant: {
+      primary: {},
+      secondary: {
+        '&[type="checkbox"]': {
+          appearance: "none",
+          position: "relative",
+          width: "20px",
+          height: "20px",
+          border: "2px solid $gray300",
+          borderRadius: "15px",
+          backgroundColor: "$white",
+          cursor: "pointer"
+        },
+        '&[type="checkbox"]:checked': {
+          backgroundColor: "$green500",
+          border: "2px solid $green500"
+        },
+        '&[type="checkbox"]:checked::before': {
+          content: "",
+          display: "block",
+          position: "absolute",
+          top: "3px",
+          left: "5px",
+          width: "5px",
+          height: "8px",
+          border: "solid $white",
+          borderWidth: "0 2px 2px 0",
+          transform: "rotate(45deg)"
+        }
+      }
+    }
+  },
+  defaultVariants: {
+    variant: "primary"
+  }
+});
+Checkbox.displayName = "Checkbox";
+
+// src/components/Forms/Select/index.tsx
+var import_react9 = require("react");
+
+// src/components/Forms/Select/styles.ts
+var Container = styled("div", {
+  border: "1px solid $gray300",
+  minHeight: "$10",
+  padding: "$2 $3",
+  borderRadius: "$sm",
+  gap: "$2",
+  display: "flex",
+  cursor: "pointer"
+});
+var SelectContainer = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  width: "100%"
+});
+var Selection = styled("div", {
+  border: "0 none",
+  backgroundColor: "transparent",
+  appearance: "none",
+  outline: "0!important",
+  width: "100%"
+});
+var AppearanceContainer = styled("div", {
+  fontSize: "$md",
+  color: "$gray300",
+  borderLeft: "1px solid $gray300",
+  paddingLeft: "$2",
+  height: "100%",
+  cursor: "pointer",
+  "&:hover": {
+    color: "$gray500",
+    transition: "color 0.2s ease-in-out"
+  }
+});
+var OptionCase = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  gap: "$2",
+  marginTop: "$2",
+  border: "1px solid $gray300",
+  minHeight: "$10",
+  padding: "$2 $3",
+  borderRadius: "$sm",
+  maxHeight: "$64",
+  overflow: "auto"
+});
+var Option = styled("div", {
+  cursor: "pointer",
+  height: "100%",
+  padding: "$2 $3",
+  borderRadius: "$sm",
+  "&:hover": {
+    backgroundColor: "$indigo50"
+  },
+  variants: {
+    variant: {
+      unselected: {},
+      selected: {
+        backgroundColor: "$indigo50"
+      }
+    }
+  }
+});
+var Input2 = styled("input", {
+  border: "0!important",
+  backgroundColor: "transparent",
+  appearance: "none",
+  outline: "0!important"
+});
+
+// src/components/Forms/Select/index.tsx
+var import_react10 = require("@phosphor-icons/react");
+var import_react_loader_spinner = require("react-loader-spinner");
+var import_jsx_runtime6 = require("react/jsx-runtime");
+var Select = (0, import_react9.forwardRef)(
+  (_a, ref) => {
+    var _b = _a, {
+      children,
+      options,
+      onOptionChange,
+      loadOptions,
+      isAsync,
+      placeholder,
+      noOptionsMessage,
+      loadingMessage
+    } = _b, props = __objRest(_b, [
+      "children",
+      "options",
+      "onOptionChange",
+      "loadOptions",
+      "isAsync",
+      "placeholder",
+      "noOptionsMessage",
+      "loadingMessage"
+    ]);
+    const [isOpen, setIsOpen] = (0, import_react9.useState)(false);
+    const [optionsState, setOptionsState] = (0, import_react9.useState)([]);
+    const [selectedOption, setSelectedOption] = (0, import_react9.useState)(
+      options == null ? void 0 : options[0]
+    );
+    const [search, setSearch] = (0, import_react9.useState)(" ");
+    const [isLoading, setIsLoading] = (0, import_react9.useState)(false);
+    const toggleDropdown = () => setIsOpen(!isOpen);
+    const handleOptionClick = (option) => {
+      setSelectedOption(option);
+      setSearch(option.label);
+      setIsOpen(false);
+      if (onOptionChange) {
+        onOptionChange(option);
+      }
+    };
+    const containerRef = (0, import_react9.useRef)(null);
+    (0, import_react9.useEffect)(() => {
+      const handleClickOutside = (event) => {
+        if (containerRef.current && !containerRef.current.contains(event.target)) {
+          setIsOpen(false);
+        }
+      };
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [containerRef]);
+    (0, import_react9.useEffect)(() => {
+      if (isAsync && loadOptions) {
+        setIsLoading(true);
+        loadOptions(search || " ").then((loadedOptions) => {
+          setOptionsState(loadedOptions);
+          setSelectedOption(loadedOptions[0]);
+          setIsLoading(false);
+        });
+      } else if (options) {
+        setOptionsState(options);
+        setSelectedOption(options[0]);
+      }
+    }, [loadOptions, isAsync, options]);
+    return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("span", { ref: containerRef, children: [
+      /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(Container, { onClick: toggleDropdown, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(SelectContainer, { children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(Selection, { children: isAsync ? /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+          Input2,
+          {
+            onChange: (e) => setSearch(e.target.value),
+            placeholder,
+            style: { width: "100%" },
+            value: isAsync && !isLoading ? search : " "
+          }
+        ) : selectedOption == null ? void 0 : selectedOption.label }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+          "div",
+          {
+            style: {
+              height: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center"
+            },
+            children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+              import_react_loader_spinner.ThreeDots,
+              {
+                height: 25,
+                width: 25,
+                color: "#d1d5db",
+                visible: isLoading
+              }
+            )
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(AppearanceContainer, { onClick: toggleDropdown, children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(import_react10.CaretDown, {}) })
+      ] }),
+      isOpen && /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(OptionCase, { children: [
+        isLoading && /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(Option, { children: loadingMessage }),
+        " ",
+        !isLoading && optionsState.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(Option, { children: noOptionsMessage }),
+        !isLoading && optionsState.map((option) => /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+          Option,
+          {
+            onClick: () => handleOptionClick(option),
+            variant: (selectedOption == null ? void 0 : selectedOption.key) === option.key ? "selected" : "unselected",
+            children: option.label
+          },
+          option.key
+        ))
+      ] })
+    ] });
+  }
+);
+Select.displayName = "Select";
+
+// src/components/Nav.tsx
+var Navbars = styled("header", {
+  display: "flex",
+  alignItems: "center",
+  minHeight: "$12",
+  width: "100%",
+  padding: "$2",
+  variants: {
+    variant: {
+      primary: {
+        backgroundColor: "$indigo200"
+      },
+      secondary: {
+        backgroundColor: "$gray200"
+      },
+      warning: {
+        backgroundColor: "$yellow200"
+      },
+      success: {
+        backgroundColor: "$green200"
+      },
+      danger: {
+        backgroundColor: "$red200"
+      }
+    },
+    allign: {
+      center: {
+        justifyContent: "center"
+      },
+      left: {
+        justifyContent: "flex-start"
+      },
+      right: {
+        justifyContent: "flex-end"
+      },
+      between: {
+        justifyContent: "space-between"
+      },
+      around: {
+        justifyContent: "space-around"
+      }
+    }
+  },
+  defaultVariants: {
+    variant: "primary",
+    allign: "between"
+  }
+});
+Navbars.displayName = "Nav";
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
   Badge,
+  Box,
   Button,
+  Card,
+  Checkbox,
   FormText,
   Menu,
   Modal,
+  Navbars,
+  Select,
   Table,
   Text,
   TextArea
